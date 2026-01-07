@@ -8,6 +8,7 @@ namespace MediSure
         /// <summary>
         /// Variable Declaration
         /// </summary>
+        #region Variable Declaration
         public string? BillId;
         public string? PatientName;
         public bool HasInsurance;
@@ -19,7 +20,9 @@ namespace MediSure
         public double FinalPayable;
         public static bool HasLastBill;
         public static PatientBill? LastBill;
+        #endregion
 
+        #region Functions
         /// <summary>
         /// Function to register Patient
         /// </summary>
@@ -88,15 +91,11 @@ namespace MediSure
         /// </summary>
         public void Clear()
         {
-            LastBill?.BillId="";
-            LastBill?.PatientName="";
-            LastBill?.FinalPayable=0;
-            LastBill?.ConsultationFee=0;
-            LastBill?.DiscountAmount=0;
-            LastBill?.GrossAmount=0;
-            LastBill?.HasInsurance=false;
+            LastBill=null;
             HasLastBill=false;
             Console.WriteLine("Last Bill Cleared.");
         }
+
+        #endregion
     }
 }

@@ -1,1 +1,1 @@
-week 1 test
+weekly tests

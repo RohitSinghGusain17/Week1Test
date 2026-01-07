@@ -7,6 +7,7 @@ namespace QuickMart
     /// </summary>
     public class SaleTransaction
     {
+        #region Variable Declaration
         /// <summary>
         /// Variable Declaration
         /// </summary>
@@ -21,8 +22,10 @@ namespace QuickMart
         public double ProfitMarginPercent;
         public static SaleTransaction? LastTransaction;
         public static bool HasLastTransaction;
+        #endregion
 
 
+        #region Functions
         /// <summary>
         /// Function to register user's transaction
         /// </summary>
@@ -127,5 +130,6 @@ namespace QuickMart
 
             Console.WriteLine("Calculation Done");
         }
+        #endregion
     }
 }
